@@ -32,10 +32,10 @@ class _HomeScreenState extends State<HomeScreen> {
         padding: const EdgeInsets.symmetric(horizontal: 12.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+          children: [ SizedBox(height: 10,),
           Text("Perfumes",style:
           TextStyle(fontSize: 20,color: Colors.black,fontWeight: FontWeight.bold),),
-        SizedBox(height: 15,),
+        SizedBox(height: 25,),
        SingleChildScrollView(scrollDirection: Axis.horizontal,
         child: Row(
           children: [
@@ -48,14 +48,14 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
   ),
-            SizedBox(height: 15,),
+            SizedBox(height: 25,),
        Container(height: 250,
            child:
          ListView(
            scrollDirection: Axis.horizontal,
            children:  perfList()
          )
-       ),SizedBox(height: 5,),
+       ),SizedBox(height: 20,),
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
           SizedBox(width: 5,),
         Icon(Icons.arrow_circle_down_rounded,color: Colors.grey,) ],
       ),
-      ],),SizedBox(height: 8,),
+      ],),SizedBox(height: 15,),
 
             Container(height: 120,
                 child:
@@ -76,17 +76,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     bestDealList()
                 )
             ),          // Expanded(
-            //   child: ListView.builder(
-            //       shrinkWrap: true,
-            //       itemCount:perfumes.length,scrollDirection: Axis.horizontal,
-            //       itemBuilder: (context, index){
-            //     return Padding(
-            //       padding: const EdgeInsets.all(8.0),
-            //       child: PerfName(perfume: perfumes[index]),
-            //     );
-            //      // Text("${perfumes[index].name}");
-            //       }),
-            // )
         ],),
       ),
     ),);
