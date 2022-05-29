@@ -44,11 +44,11 @@ class FilterMode extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        FilterName(name: "FLORAL",selected: false,),SizedBox(width: 5,),
-        FilterName(name: "ORIENTAL",selected: false,),SizedBox(width: 5,),
-        FilterName(name: "WOODY",selected: false,),SizedBox(width: 5,),
-        FilterName(name: "WARM & SPICY",selected: false,),SizedBox(width: 5,),
-        FilterName(name: "FRESH",selected: false,),SizedBox(width: 5,),
+        FilterName(name: "FLORAL",selected: false,),SizedBox(width: 7,),
+        FilterName(name: "ORIENTAL",selected: false,),SizedBox(width: 7,),
+        FilterName(name: "WOODY",selected: false,),SizedBox(width: 7,),
+        FilterName(name: "WARM & SPICY",selected: false,),SizedBox(width: 7,),
+        FilterName(name: "FRESH",selected: false,),SizedBox(width: 7,),
         FilterName(name: "WOMEN",selected: false,),
       ],
     );
